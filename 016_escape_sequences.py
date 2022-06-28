@@ -1,2 +1,3 @@
-story = "zeon is good.\nHe is very good."
+story = "\'zeon is good.\nHe \tis ve\\ry good."
 print(story)
+# run it and watch the changes 

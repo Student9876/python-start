@@ -9,4 +9,4 @@ print(story.count("time"))
 print(story.capitalize())
 print(story.find("student")) # it shows only first occurrence with its first index.
                             #If there is no such words then -1
-print(story.replace("ZEON","zeon"))                            
+print(story.replace("ZEON","zeon"))  #replaces all occurrences. (old,new)                            
