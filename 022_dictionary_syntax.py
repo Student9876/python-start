@@ -1,8 +1,5 @@
 # Dictinary is collection of Key- Value pairs
 
-from lib2to3.refactor import MultiprocessingUnsupported
-
-
 myDict = {
     "ZEON": "Currently a programming Learner",
     "Fast": "In a quick manner",
