@@ -8,5 +8,6 @@ myDict = {
 }
 print(myDict['ZEON'])
 print(myDict['Fast'])
+myDict['Marks'] = [34,56,78] 
 print(myDict['Marks'])
-print(myDict["anotherDict"])
+print(myDict["anotherDict"]['zeon']) 
