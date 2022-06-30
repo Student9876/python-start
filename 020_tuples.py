@@ -5,7 +5,7 @@ t = (1, 2, 4, 5)
 print(t[0])
 
 #cannot update values of a tuple
-# t[1]=7
+# t[1]=7 
 
 #Types of tuple
 t1=() #Empty tuple

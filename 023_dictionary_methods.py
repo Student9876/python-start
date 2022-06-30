@@ -28,4 +28,3 @@ print(mydict.get('zeon')) #same result as print(mydict['zeon']) but
 print(mydict.get('zeon2'))   #it Returns none
 print(mydict['zeon2'])       #Throws error
 
-#  Next day start from set
