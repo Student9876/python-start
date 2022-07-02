@@ -37,3 +37,10 @@ print(b)
 #Clear function. It empties a set
 b.clear()
 print(b)
+
+#Set Intersection and Union
+a = {1,2,4,5,6}
+b = {1,6,3,7,9}
+	print(a.union(b))
+	print(b.intersection(a))
+	print(a.intersection(b))

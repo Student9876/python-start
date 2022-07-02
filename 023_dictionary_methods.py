@@ -26,5 +26,5 @@ print(mydict.get('zeon')) #same result as print(mydict['zeon']) but
 
 # Difference between .get and[] syntax in Dictionary
 print(mydict.get('zeon2'))   #it Returns none
-print(mydict['zeon2'])       #Throws error
+#print(mydict['zeon2'])       #Throws error
 
