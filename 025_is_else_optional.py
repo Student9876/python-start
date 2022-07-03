@@ -4,3 +4,6 @@ if(a==7):
 elif(a>45):
     print("no and yes")
 #it will not show any error if condition doesn't meet
+''' 
+else is optional
+'''
