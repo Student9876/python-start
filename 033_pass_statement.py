@@ -11,6 +11,3 @@ print("Passing while loop successfully")
 
 def sum(a, b):
     pass    #passed a function. More about function later
-
-
-#added temp comment
