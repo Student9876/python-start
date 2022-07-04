@@ -1,6 +1,6 @@
 this = "       Zeon is a good         "
 print(this)
-print(this.strip())  # it cutoffs the extra spaces in the front and end
+print(this.strip())  # it cutoffs the extra spaces(White Spaces) in the front and end
 
 
 def remove_and_strip(string, word):
