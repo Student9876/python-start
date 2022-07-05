@@ -21,6 +21,19 @@ def game(comp, you):
         elif you == 'p':
             return False        
 
+def HS(a):
+    if a == True:
+        f = open('highscore.txt','a')
+        f.write("Win")
+        f.close()
+    elif a == False:
+        f = open('highscore.txt','a')
+        f.write("lose")
+        f.close()
+    elif a == None:
+        f = open('highscore.txt','a')
+        f.write("Draw")
+        f.close()
 
 print("comp Turn: Rock(r) Paper(p) Scissors(s)?")
 randNo = random.randint(1, 3)  #Here select a random number between 1-3
@@ -36,8 +49,12 @@ you = input("Your Turn: Rock(r) Paper(p) Scissors(s)?")
 
 result=game(comp, you)
 if result == True:
+    HS(True)
     print(f"Computer chose {comp} and you chose {you} You win!!")
 elif result == False:
+    HS(False)
     print(f"Computer chose {comp} and you chose {you} You lose ;);)")
 else:
+    HS(None)
     print(f"Computer chose {comp} and you chose {you} Draw")
+    
