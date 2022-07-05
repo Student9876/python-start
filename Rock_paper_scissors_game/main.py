@@ -23,13 +23,13 @@ def game(comp, you):
 
 def HS(a):
     if a == True:
-        with open('highscore.txt' , 'a') as f:
+        with open('Rock_paper_scissors_game\log_highscore.txt' , 'a') as f:
             f.write("Win\n")
     elif a == False:
-        with open('highscore.txt' , 'a') as f:
+        with open('Rock_paper_scissors_game\log_highscore.txt' , 'a') as f:
             f.write("Lose\n")
     elif a == None:
-        with open('highscore.txt' , 'a') as f:
+        with open('Rock_paper_scissors_game\log_highscore.txt' , 'a') as f:
             f.write("Draw\n")
 
 print("comp Turn: Rock(r) Paper(p) Scissors(s)?")
