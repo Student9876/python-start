@@ -23,17 +23,14 @@ def game(comp, you):
 
 def HS(a):
     if a == True:
-        f = open('highscore.txt','a')
-        f.write("Win")
-        f.close()
+        with open('highscore.txt' , 'a') as f:
+            f.write("Win\n")
     elif a == False:
-        f = open('highscore.txt','a')
-        f.write("lose")
-        f.close()
+        with open('highscore.txt' , 'a') as f:
+            f.write("Lose\n")
     elif a == None:
-        f = open('highscore.txt','a')
-        f.write("Draw")
-        f.close()
+        with open('highscore.txt' , 'a') as f:
+            f.write("Draw\n")
 
 print("comp Turn: Rock(r) Paper(p) Scissors(s)?")
 randNo = random.randint(1, 3)  #Here select a random number between 1-3
