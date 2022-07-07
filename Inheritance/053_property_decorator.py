@@ -10,7 +10,7 @@ class Employee:
         return self.salary + self.salarybonus
 
 
-    @totalSalary.setter
+    @totalSalary.setter     #setter method
     def totalSalary(self, val):
         self.salarybonus = val - self.salary
 

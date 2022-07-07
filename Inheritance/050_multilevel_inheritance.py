@@ -31,7 +31,7 @@ pr.takeBreath()  #it will use the function from the  latest one, if it not has i
 # print(p.company)  #Throws an error
 print(e.company)  
 print(pr.company)  
-print(pr.country)  
+print(pr.country)   #Shows the attribute from parent
 
 
 

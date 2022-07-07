@@ -1,3 +1,7 @@
+'''
+Class method allow you to change class attributes
+@classmethod --> Class method decorator'''
+
 class Employee:
     company = "Camel"
     salary = 100
@@ -8,7 +12,8 @@ class Employee:
 
     @classmethod
     def changeSalary(cls, sal):
-        cls.salary = sal     #This will change the class attribute +_+
+        cls.salary = sal     #This will also change the class attribute +_+
+        #this will let you access class. cls, classmethod
 
 
 

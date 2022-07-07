@@ -1,3 +1,8 @@
+'''
+Super()
+Super  method is used to access the methods of a super class in the derived class
+'''
+
 class Person:
     country = "India"
 
@@ -24,7 +29,7 @@ class Programmer(Employee):
     company = "Fiverr"
 
     def __init__(self):
-        super().__init__()
+        super().__init__()  # this will run the previous functions also
         print('Initializing Programmer....')
     def getSalary(self):
         print(f"No salary to programmers")
