@@ -23,4 +23,6 @@ print(l1)
 l1.remove(21)  #removes element 21 from the list
 print(l1)
 
+l1[7] = 9
+print(l1)
 

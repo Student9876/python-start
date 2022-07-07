@@ -1,6 +1,6 @@
 class Employee:
     company = "Google"
-    def getSalary(self):
+    def getSalary(self):   #self is like a parameter. But usung self simplifies many things
         print("Salary is 100K")
 
 zeon = Employee()   
