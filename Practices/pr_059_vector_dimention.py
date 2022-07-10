@@ -21,7 +21,14 @@ class Vector:
         for i in range(len(self.vec)):
             sum += (self.vec[i] * vec2.vec[i])
         return sum
+
+    def __len__(self):
+        return len(self.vec)
+
+
 v1 = Vector([1, 4, 6])
 v2 = Vector([3, 6, 9])
 print(v1 + v2)
 print(v1*v2)
+print(len(v1))
+print(len(v2))
