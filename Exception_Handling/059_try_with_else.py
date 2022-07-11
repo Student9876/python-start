@@ -4,4 +4,4 @@ try:
 except Exception as e:
     print(e)
 else:
-    print("We were successful")
+    print("We were successful")  #Else is used for confirming that the code was correctly run
