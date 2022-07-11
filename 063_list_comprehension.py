@@ -12,7 +12,7 @@ print(b)
 c = [item for item in a if item>8]
 print(c)
 
-#dictionary
+#Set
 t = [1, 4, 2, 4, 2, 1, 1, 3]
 s = {i for i in t}
-print(s)
+print(s)  #prints the set. Repeatations removed(Set)
