@@ -1,4 +1,7 @@
 '''
+create a virtual environment : python -m virtualenv <name>
+
+
 For MacOs/ linux user: source venv/bin/activate
 For Windows powershell user: ./venv/Scripts/Activate.ps1
 
