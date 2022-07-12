@@ -1,5 +1,5 @@
 '''
-For linux user: source venv/bin/activate
+For MacOs/ linux user: source venv/bin/activate
 For Windows powershell user: ./venv/Scripts/Activate.ps1
 
 if there is a problem eith Execution policy settings.
