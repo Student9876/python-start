@@ -1,7 +1,5 @@
 #WAP a class programmer for storing information of few programmars working at microsoft 
 
-from threading import get_ident
-
 
 class Programmer():
     company = "Microsoft"
