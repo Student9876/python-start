@@ -37,10 +37,10 @@ if __name__=="__main__":
     centralLibrary = Library(['Algorithms', 'Django', 'Clrs', 'Python Notes'])
     student = Student()
 
-
+    print("==========Welcome to central Library===========")
     while True:
-        welcomeMsg = '''==========Welcome to central Library===========
-
+        
+        welcomeMsg = '''
         PLease choose an option:
         1. List all the books
         2. Request a book
