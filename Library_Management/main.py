@@ -5,7 +5,7 @@ class Library:
     def __init__(self, username):
         self.username = username
         self.books = []
-        with open("Library_Management/Books.txt", 'r') as f:
+        with open("Books.txt", 'r') as f:
             # reading each line    
             for line in f:
             # reading each word        
@@ -15,33 +15,45 @@ class Library:
             
 
     def createRecord(self):
-        if os.path.exists(f"Library_Management/{self.username}.txt"):
-            with open(f"Library_Management/{self.username}.txt", 'r') as f:
+        if os.path.exists(f"{self.username}.txt"):
+            with open(f"{self.username}.txt", 'r') as f:
                 print(f"You have borrowed:{f.read()}")
         else:
-            with open(f"Library_Management/{self.username}.txt", 'w'):
+            with open(f"{self.username}.txt", 'w'):
                 pass
 
-    def updateRecord(self, bookname, value):   
-        
-        if value == True:
-            with open(f"Library_Management/{self.username}.txt" , 'r+') as f:
-                lines = f.readlines() 
-                f.seek(0)
-                for i in lines:
-                    if i != bookname:
-                        i.strip('\n') != bookname
-
+    def updateRecord(self, bookName, Value):   #To update the userdata according to action
+        self.bookname = bookName
+        if Value == True:
+            with open(f"{self.username}.txt" , 'r') as f:
+                userdata = f.readlines()
+                n = userdata.index(f"{self.bookname}\n")
+                userdata.pop(n)
+            with open(f"{self.username}.txt" , 'w') as f:
+                f.write("")
+            for items in userdata:
+                with open(f"{self.username}.txt" , 'a') as f:
+                    f.write(items)
 
             
+            
+
+                # with open(f"Library_Management/{self.username}.txt" , 'w') as f:
+                #     f.write("")
+                # with open(f"Library_Management/{self.username}.txt" , 'a') as f:
+                #     if bookname in list:
+                #         list.remove(bookname)           
+                #         for item in list:
+                #             f.write(item + "\n")
+
         else:   
-            with open(f"Library_Management/{self.username}.txt" , 'a') as f:
-                f.write(f"{bookname} \n")
+            with open(f"{self.username}.txt" , 'a') as f:
+                f.writelines(f"{bookName}\n")
 
     def updateBooks(self):
-        with open(f"Library_Management/Books.txt" , 'w') as f:
+        with open(f"Books.txt" , 'w') as f:
                 for item in self.books:
-                    f.writelines(f"{item}\n")
+                    f.write(f"{item}\n")
 
     def displayAvailableBooks(self):
         books = []
@@ -54,8 +66,8 @@ class Library:
         if bookName in self.books:
             print(f"You have been issued {bookName}. PLease keep it safe and return it within 30 days.\n")
             self.books.remove(bookName)
-            self.updateBooks()
             self.updateRecord(bookName, False)
+            self.updateBooks()
 
             return True
         else:
@@ -64,8 +76,8 @@ class Library:
 
     def returnBook(self, bookName):
         self.books.append(bookName)
-        self.updateBooks()
         self.updateRecord(bookName, True)
+        self.updateBooks()
         
 
         print("Thanks for returning this book. Hope you enjoyed reeeding it. Have a great day ahead!!")
@@ -79,6 +91,7 @@ class Student:
 
     def returnBook(self):
         self.book = input("Enter the name of the book you want to return: ")
+        print(type(self.book))
         return self.book
 
 
