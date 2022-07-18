@@ -35,17 +35,6 @@ class Library:
                 with open(f"{self.username}.txt" , 'a') as f:
                     f.write(items)
 
-            
-            
-
-                # with open(f"Library_Management/{self.username}.txt" , 'w') as f:
-                #     f.write("")
-                # with open(f"Library_Management/{self.username}.txt" , 'a') as f:
-                #     if bookname in list:
-                #         list.remove(bookname)           
-                #         for item in list:
-                #             f.write(item + "\n")
-
         else:   
             with open(f"{self.username}.txt" , 'a') as f:
                 f.writelines(f"{bookName}\n")
@@ -91,7 +80,6 @@ class Student:
 
     def returnBook(self):
         self.book = input("Enter the name of the book you want to return: ")
-        print(type(self.book))
         return self.book
 
 
